@@ -23,7 +23,7 @@ A full-stack chat application pairing a **React** frontend with a **Python (Fast
 ### 1. Start the Python Backend
 
 ```powershell
-python ollama_chat_api.py
+python Server.py
 ```
 
 Backend runs on `http://127.0.0.1:8000` (or `http://localhost:8000`).
@@ -31,7 +31,6 @@ Backend runs on `http://127.0.0.1:8000` (or `http://localhost:8000`).
 ### 2. Start the React Frontend
 
 ```powershell
-cd frontend
 npm install
 npm run dev
 ```
