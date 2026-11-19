@@ -6,7 +6,7 @@ A full-stack chat application pairing a **React** frontend with a **Python (Fast
 
 ```text
 .
-├── backend/              # or root Python API script (e.g., main.py / ollama_chat_api.py)
+├── Server.py             # root Python API script 
 ├── frontend/             # or React app directory (src/App.jsx, vite.config.js, etc.)
 ├── .gitignore
 └── README.md
