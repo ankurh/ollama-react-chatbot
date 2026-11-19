@@ -1,0 +1,71 @@
+:root {
+  --bg: #f3f4f8;
+  --surface: #ffffff;
+  --surface-2: #f1f3f7;
+  --border: #e3e6ec;
+  --text: #1c1f26;
+  --text-muted: #6b7280;
+  --accent: #6d4aff;
+  --accent-2: #3b82f6;
+  --accent-soft: rgba(109, 74, 255, 0.1);
+  --user-bubble: linear-gradient(135deg, #6d4aff, #3b82f6);
+  --bot-bubble: #f1f3f7;
+  --code-bg: #0f172a;
+  --code-text: #e2e8f0;
+  --danger: #dc2626;
+  --danger-soft: #fef2f2;
+  --success: #16a34a;
+  --shadow: 0 10px 30px -12px rgba(30, 30, 60, 0.25);
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  font: 15px/1.55 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  color-scheme: light dark;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d0f14;
+    --surface: #151821;
+    --surface-2: #1d212c;
+    --border: #262b38;
+    --text: #e6e8ee;
+    --text-muted: #9097a6;
+    --accent: #9b85ff;
+    --accent-soft: rgba(155, 133, 255, 0.15);
+    --bot-bubble: #1d212c;
+    --code-bg: #0a0c11;
+    --danger: #f87171;
+    --danger-soft: rgba(248, 113, 113, 0.12);
+    --success: #4ade80;
+    --shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
